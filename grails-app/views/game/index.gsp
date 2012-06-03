@@ -17,7 +17,7 @@
 			    </div>
 			</div>
             <g:form id="guessForm" url="[controller: 'game', action: 'guess']" method="post">
-                <p>Guess the price! (<span id="remaining"></span> guesses remaining)</p>
+                <p>Guess the price! (<span id="remaining"></span> guess<span id="guessS">es</span> remaining)</p>
 				$<input type="text" name="guess">
 	            <input id="submitBtn" type="submit" value="Ask the Gerbil">
             </g:form>

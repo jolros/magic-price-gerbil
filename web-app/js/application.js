@@ -55,9 +55,11 @@ $("#guessForm").submit(function(event) {
     	var guessesLeft = $("#remaining").html() - 1;
     	
         if (correct) {
-        	response = "Correct! You got it in "+ (maxGuesses - guessesLeft) +" guesses!";
+    		$("#submitBtn").remove();
+        	response = "Correct! You got it in "+ (maxGuesses - guessesLeft) +" guess" + (maxGuesses - guessesLeft == 1 ? "" : "es") + "!";
         } else {
         	$("#remaining").html( guessesLeft );
+        	$("#guessS").html( guessesLeft == 1 ? "" : "es" );
         	
         	if (guessesLeft <= 0) {
         		$("#submitBtn").remove();
