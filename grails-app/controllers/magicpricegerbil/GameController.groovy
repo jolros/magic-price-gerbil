@@ -41,7 +41,8 @@ class GameController {
 		render(contentType: "text/json") {[
 				correct: correct,
 				higher: higher,
-				actualPrice: ('$'+ NumberFormat.getInstance().format(price))
+				actualPrice: ('$'+ NumberFormat.getInstance().format(price)),
+				formattedPrice: ('$'+ NumberFormat.getInstance().format(guess))
 			]
 		}
 	}
