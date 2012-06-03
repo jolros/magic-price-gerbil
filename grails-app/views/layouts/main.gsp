@@ -17,9 +17,9 @@
         <r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'logo.png')}" alt="Magic Price Gerbil"/></a></div>
+		<div id="grailsLogo" role="banner"><a href="${grailsApplication.config.grails.serverURL}"><img src="${resource(dir: 'images', file: 'logo.png')}" alt="Magic Price Gerbil"/></a></div>
 		<g:layoutBody/>
-		<div class="footer" role="contentinfo"></div>
+		<div class="footer" role="contentinfo">Version 0.0.0.1 Alpha (non-competitive boring mode). Find me at <a href="https://github.com/jolros/magic-price-gerbil">https://github.com/jolros/magic-price-gerbil</a></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		<g:javascript library="application"/>
         <r:layoutResources />
