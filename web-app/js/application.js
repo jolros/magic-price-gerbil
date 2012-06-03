@@ -40,7 +40,7 @@ $("#guessForm").submit(function(event) {
     	guess = $form.find( 'input[name="guess"]' ).val(),
         url = $form.attr( 'action' );
 
-    if (!/^\d+$/.test(guess)) {
+    if (! (/^\d+$/.test(guess) || /^((\d+(\.\d *)?)|((\d*\.)?\d+))$/.test(guess)) ){
     	return false;
     }
     
