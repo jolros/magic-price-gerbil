@@ -64,9 +64,9 @@ $("#guessForm").submit(function(event) {
 	        	response = "You lose! The price was "+ actualPrice;
         	} else {
 	        	if (higher) {
-		        	response = formattedPrice + "is too LOW!";
+		        	response = formattedPrice + " is too LOW!";
 		        } else {
-		        	response = formattedPrice + "is too HIGH!";
+		        	response = formattedPrice + " is too HIGH!";
 		        }
         	}
         }
